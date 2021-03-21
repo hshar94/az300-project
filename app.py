@@ -23,7 +23,7 @@ container_name = 'con1'
 database = client.create_database_if_not_exists(id=database_name)
 container1 = database.create_container_if_not_exists(
     id=container_name,
-    partition_key=PartitionKey(path="/lastName"),
+    partition_key=PartitionKey(path="/filename"),
     offer_throughput=400
 )
 # Account name
